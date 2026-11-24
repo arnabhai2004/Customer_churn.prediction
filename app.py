@@ -23,7 +23,7 @@ monthlycharge = st.number_input("Enter monthly charge", min_value=0.0, max_value
 
 st.divider()
 
-predictbutton = st.button("Predict")   # ← এই line টা যোগ হয়েছে
+predictbutton = st.button("Predict")  
 
 if predictbutton:
     gender_selected = 1 if gender == "Female" else 0
@@ -33,7 +33,7 @@ if predictbutton:
     prediction = model.predict(x_scaled)[0]
     predicted = 'Yes' if prediction == 1 else 'No'
 
-    st.balloons()  # ← এই line টা যোগ হয়েছে
+    st.balloons()  
 
     st.write(f"The predicted class is: {predicted}")
 
